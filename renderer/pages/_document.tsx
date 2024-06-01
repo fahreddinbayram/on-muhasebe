@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Html,
   Head,
@@ -6,19 +6,19 @@ import {
   NextScript,
   DocumentProps,
   DocumentContext,
-} from 'next/document'
+} from "next/document";
 import {
   DocumentHeadTags,
   DocumentHeadTagsProps,
   documentGetInitialProps,
-} from '@mui/material-nextjs/v14-pagesRouter'
-import theme, { roboto } from '../lib/theme'
+} from "@mui/material-nextjs/v14-pagesRouter";
+import theme, { roboto } from "../lib/theme";
 
 export default function MyDocument(
   props: DocumentProps & DocumentHeadTagsProps
 ) {
   return (
-    <Html lang="en" className={roboto.className}>
+    <Html lang="tr" className={roboto.className}>
       <Head>
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -30,10 +30,10 @@ export default function MyDocument(
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
-  const finalProps = await documentGetInitialProps(ctx)
-  return finalProps
-}
+  const finalProps = await documentGetInitialProps(ctx);
+  return finalProps;
+};

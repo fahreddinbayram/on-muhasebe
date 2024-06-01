@@ -15,8 +15,7 @@ import { orange } from "@mui/material/colors";
 const Root = styled("div")(({ theme }) => {
   return {
     textAlign: "center",
-    paddingTop: theme.spacing(5),
-    backgroundColor: orange[100],
+    paddingTop: theme.spacing(0),
   };
 });
 
@@ -42,24 +41,9 @@ export default function HomePage() {
             </Button>
           </DialogActions>
         </Dialog>
-        <Typography variant="h4" gutterBottom>
-          Material-UI
-        </Typography>
-        <Typography variant="subtitle1" gutterBottom>
-          with Nextron
-        </Typography>
-        <Image
-          src="/images/logo.png"
-          alt="Logo image"
-          width={256}
-          height={256}
-        />
         <Typography gutterBottom>
-          <Link href="/muhammed">Go to the next page</Link>
+          <Link href="/next">Go to the next page</Link>
         </Typography>
-        <Button variant="contained" color="secondary" onClick={handleClick}>
-          Super Secret Password
-        </Button>
       </Root>
     </React.Fragment>
   );

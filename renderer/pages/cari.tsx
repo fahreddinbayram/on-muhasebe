@@ -4,28 +4,23 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Link from "../components/Link";
 import { styled } from "@mui/material";
-import { yellow } from "@mui/material/colors";
 
 const Root = styled("div")(({ theme }) => {
   return {
     textAlign: "center",
-    paddingTop: theme.spacing(20),
-    backgroundColor: yellow[100],
+    paddingTop: theme.spacing(4),
   };
 });
 
-export default function NextPage() {
+export default function Cari() {
   return (
     <React.Fragment>
       <Head>
-        <title>TG - Ön Muhasebe Programı</title>
+        <title>Ön Muhasebe</title>
       </Head>
       <Root>
         <Typography variant="h4" gutterBottom>
-          Test
-        </Typography>
-        <Typography gutterBottom>
-          <Link href="/home">Go to the home page</Link>
+          Cari Hesaplamalar
         </Typography>
       </Root>
     </React.Fragment>
