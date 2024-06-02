@@ -1,14 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Link from "../components/Link";
 import { styled } from "@mui/material";
 
 const Root = styled("div")(({ theme }) => {
   return {
     textAlign: "center",
     paddingTop: theme.spacing(4),
+    paddingLeft: "20px", // Sol boşluk eklemek için
   };
 });
 
